@@ -1,0 +1,15 @@
+@import './bootstrap/variables.css';
+@import './bootstrap/normalize.css';
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-block-size: 100vh;
+	background-color: var(--bg);
+}
+
+.card {
+	border: 1px solid white;
+	max-inline-size: 43.75rem;
+}
