@@ -92,7 +92,16 @@
 }
 
 .reactions__image {
-	vertical-align: middle;
+	padding: 0;
+	height: 50px;
+	width: 50px;
+	background: url('./../assets/img/sprite-heards.png') no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.heard-animation {
+	animation: sprite 1s steps(28) forwards;
 }
 
 .reactions__count {
@@ -126,5 +135,15 @@
 		display: block;
 		color: var(--grey);
 		font: var(--body1-regular);
+	}
+}
+
+@keyframes sprite {
+	from {
+		background-position: left;
+	}
+
+	to {
+		background-position: right;
 	}
 }

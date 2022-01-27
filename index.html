@@ -57,21 +57,24 @@
 								<img src="./src/assets/img/web-site-mob.png" alt="Web site image" class="widget-link__image" />
 							</picture>
 							<div class="widget-link__info">
-								<span class="widget-link__title">Grid Gallery</span>
-								<span class="email">leonidasesteban.com</span>
+								<span class="widget-link__title">Grid Gallery</span> <span class="email">leonidasesteban.com</span>
 								<p class="widget-link__paragraph">Practica tus habilidades de Grid CSS con este ejercicio de las capitales del mundo.</p>
 							</div>
 						</a>
 						<div class="reactions">
-							<picture>
-								<source media="(min-width: 767px)" srcset="./src/assets/img/heard-1.png" />
-								<img src="./src/assets/img/heard-1.png" alt="Heard image" class="reactions__image" />
-							</picture>
+							<button class="reactions__image"></button>
 							<span class="reactions__count">250</span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
+		<script>
+			const $btn = document.querySelector('.reactions__image');
+			
+			$btn.addEventListener('click', () => {
+				$btn.classList.toggle('heard-animation');
+			});
+		</script>
 	</body>
 </html>
